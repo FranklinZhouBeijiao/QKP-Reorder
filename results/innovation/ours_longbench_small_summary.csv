@@ -1,0 +1,4 @@
+task_name,method,sample_count,valid_predictions,empty_predictions,contains_answer_rate,avg_f1,avg_compressed_tokens,avg_token_saving_ratio,avg_prompt_tokens,avg_compression_time,avg_answer_time,retry_used_count,error_count,api_total_tokens_avg
+2wikimqa,ours_full,50,50,0,0.64,0.6150634920634921,1969.46,0.639467719373223,2016.1,0.035139389038085896,5.049264888763428,9,0,2645.6
+hotpotqa,ours_full,50,50,0,0.48,0.5534285714285714,2000.0,0.8194281836103354,2050.66,0.05173995971679683,4.2577186918258665,8,0,2555.74
+multifieldqa_en,ours_full,50,50,0,0.28,0.5198489662247642,1986.88,0.6261240218980285,2029.8,0.021481232643127398,1.583555588722229,1,0,2160.72

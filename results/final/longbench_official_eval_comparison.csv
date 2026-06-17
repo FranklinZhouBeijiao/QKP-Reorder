@@ -1,0 +1,16 @@
+method,task_name,official_score,source_json,contains_answer_rate,avg_f1,avg_compressed_tokens,avg_token_saving_ratio
+original,hotpotqa,67.37,results\final\longbench_official_eval_original.json,0.56,0.6736645021645021,13294.76,0.0
+truncate,hotpotqa,19.58,results\final\longbench_official_eval_truncate.json,0.18,0.1958055786612793,2000.0,0.8194281836103354
+bm25,hotpotqa,60.94,results\final\longbench_official_eval_bm25.json,0.5,0.6093860877684407,2007.52,0.8185257936499585
+llmlingua,hotpotqa,36.84,results\final\longbench_official_eval_llmlingua.json,0.3,0.3683612836438923,1955.2,0.823271101384956
+longllmlingua,hotpotqa,45.57,results\final\longbench_official_eval_longllmlingua.json,0.36,0.4556852553298803,1955.2,0.823271101384956
+original,2wikimqa,71.08,results\final\longbench_official_eval_original.json,0.76,0.7108333333333333,7024.16,0.0
+truncate,2wikimqa,26.98,results\final\longbench_official_eval_truncate.json,0.36,0.2697694006476615,1969.34,0.6395384649480487
+bm25,2wikimqa,65.71,results\final\longbench_official_eval_bm25.json,0.68,0.65705291005291,1979.18,0.6375917489879622
+llmlingua,2wikimqa,59.93,results\final\longbench_official_eval_llmlingua.json,0.7,0.5993374741200828,1882.4,0.6550235075788648
+longllmlingua,2wikimqa,62.68,results\final\longbench_official_eval_longllmlingua.json,0.7,0.6267773109243697,1882.4,0.6550235075788648
+original,multifieldqa_en,57.8,results\final\longbench_official_eval_original.json,0.32,0.5779718969040247,7068.86,0.0
+truncate,multifieldqa_en,50.12,results\final\longbench_official_eval_truncate.json,0.28,0.5011932279892163,1986.34,0.6264594075491927
+bm25,multifieldqa_en,52.6,results\final\longbench_official_eval_bm25.json,0.22,0.525982328151578,1994.64,0.6248236436367499
+llmlingua,multifieldqa_en,45.45,results\final\longbench_official_eval_llmlingua.json,0.22,0.454536719209857,1996.86,0.6191229233080106
+longllmlingua,multifieldqa_en,42.59,results\final\longbench_official_eval_longllmlingua.json,0.2,0.4258601433156337,1996.86,0.6191229233080106

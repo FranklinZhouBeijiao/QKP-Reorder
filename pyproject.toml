@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qkp-reorder"
+version = "0.1.0"
+description = "Lightweight long-context prompt compression with question-aware keyword protection and middle-aware reordering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "QKP-Reorder contributors" }]
+dependencies = [
+    "rank-bm25==0.2.2",
+    "tiktoken>=0.7",
+    "python-dotenv>=1.0",
+    "openai>=1.0",
+]
+
+[project.optional-dependencies]
+demo = ["streamlit>=1.35,<2"]
+
+[tool.setuptools]
+packages = ["qkp_reorder"]
+

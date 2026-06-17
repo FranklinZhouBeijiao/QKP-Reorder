@@ -1,0 +1,4 @@
+method,task_name,official_score,source_json
+ours_full,2wikimqa,61.51,external\LongBench\LongBench\pred\innovation_ours_full\result.json
+ours_full,hotpotqa,55.34,external\LongBench\LongBench\pred\innovation_ours_full\result.json
+ours_full,multifieldqa_en,51.98,external\LongBench\LongBench\pred\innovation_ours_full\result.json

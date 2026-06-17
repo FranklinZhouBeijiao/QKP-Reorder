@@ -1,0 +1,28 @@
+# Innovation Experiment Summary
+
+## Scope
+
+- Stage 2: Chinese/English segmentation and keyword/entity/number protection utilities.
+- Stage 3: Ours compressor variants registered as reusable methods.
+- Stage 4: NQ 100 main comparison with `ours_full`.
+- Stage 5: Lost-in-the-Middle answer-position sensitivity with `ours_full`.
+- Stage 6: LongBench three-task experiment and official LongBench evaluation.
+- Stage 7: Ablation and budget sensitivity analysis.
+- Stage 8: Report/PPT-ready summary assets.
+
+## Master Summary
+
+| section | scope | primary_metric | ours_result | comparison_reference | comparison_reference_result | report_message |
+| --- | --- | --- | --- | --- | --- | --- |
+| NQ 100 | 100 samples, token budget 750 | NQ-style F1 | 0.47 | bm25 | 0.531 | Ours is a lightweight sixth method but does not beat BM25 on NQ 100. |
+| Lost-in-the-Middle | Position 20, 20 samples | contains_answer | 0.55 | truncate | 0.2 | Ours is much more stable than truncate when answer evidence is late. |
+| LongBench official | hotpotqa, 2wikimqa, multifieldqa_en; 50 samples each | official_score average | 56.277 | BM25 and LongLLMLingua |  | Ours trails BM25 overall, beats LongLLMLingua on hotpotqa and multifieldqa_en, and trails it on 2wikimqa. |
+| Ablation | 100 position-sensitivity samples, token budget 1500 | NQ-style F1 | 0.461 | ours_keyword | 0.461 | Keyword protection contributes the clearest gain; naive middle-aware reordering is not consistently positive. |
+| Budget sensitivity | ours_full, budgets 500/750/1000/1500/2000 | NQ-style F1 and API tokens | 0.437 | 2000 token budget | 0.45 | 1500 tokens is the recommended cost-quality trade-off; 2000 adds small quality gain with higher cost. |
+
+## Evaluation Wording
+
+- NQ and Lost-in-the-Middle use NQ-style normalized short-answer EM/F1, not full official NaturalQuestions evaluation.
+- LongBench reporting should prefer official `eval.py` scores.
+- All innovation answer generation uses the same DeepSeek-based pipeline as the reproduction experiments.
+- Cost is reported as an API-token proxy, not as a monetary estimate.

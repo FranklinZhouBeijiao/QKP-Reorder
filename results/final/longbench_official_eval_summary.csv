@@ -1,0 +1,16 @@
+method,task_name,official_score,source_json
+original,hotpotqa,67.37,results\final\longbench_official_eval_original.json
+truncate,hotpotqa,19.58,results\final\longbench_official_eval_truncate.json
+bm25,hotpotqa,60.94,results\final\longbench_official_eval_bm25.json
+llmlingua,hotpotqa,36.84,results\final\longbench_official_eval_llmlingua.json
+longllmlingua,hotpotqa,45.57,results\final\longbench_official_eval_longllmlingua.json
+original,2wikimqa,71.08,results\final\longbench_official_eval_original.json
+truncate,2wikimqa,26.98,results\final\longbench_official_eval_truncate.json
+bm25,2wikimqa,65.71,results\final\longbench_official_eval_bm25.json
+llmlingua,2wikimqa,59.93,results\final\longbench_official_eval_llmlingua.json
+longllmlingua,2wikimqa,62.68,results\final\longbench_official_eval_longllmlingua.json
+original,multifieldqa_en,57.8,results\final\longbench_official_eval_original.json
+truncate,multifieldqa_en,50.12,results\final\longbench_official_eval_truncate.json
+bm25,multifieldqa_en,52.6,results\final\longbench_official_eval_bm25.json
+llmlingua,multifieldqa_en,45.45,results\final\longbench_official_eval_llmlingua.json
+longllmlingua,multifieldqa_en,42.59,results\final\longbench_official_eval_longllmlingua.json
